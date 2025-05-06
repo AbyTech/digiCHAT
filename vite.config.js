@@ -1,5 +1,8 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
 export default defineConfig({
-  // ...other config
+  plugins: [react()],
   build: {
     rollupOptions: {
       output: {
@@ -10,5 +13,9 @@ export default defineConfig({
         }
       }
     }
+  },
+  // Add this section for SPA routing
+  server: {
+    historyApiFallback: true,
   }
 })
