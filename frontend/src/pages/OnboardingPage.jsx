@@ -173,7 +173,7 @@ const OnboardingPage = () => {
             <button className="btn btn-primary w-full" disabled={isPending} type="submit">
               {!isPending ? (
                 <>
-                  <ShipWheelIcon className="size-5 mr-2" />
+                  <FlagTriangleLeftIcon className="size-5 mr-2" />
                   Complete Onboarding
                 </>
               ) : (
